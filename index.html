@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+
+        <div class="card" id="question1">
+            <h2>Question 1: What's your name?</h2>
+            <input type="text" id="answer1" placeholder="Enter your name">
+            <button onclick="nextQuestion(2)">Next</button>
+        </div>
+
+        <div class="card" id="question2">
+            <h2>Question 2: What's your age?</h2>
+            <input type="text" id="answer2" placeholder="Enter your age">
+            <button onclick="nextQuestion(3)">Next</button>
+        </div>
+
+        <div class="card" id="question3">
+            <h2>Question 3: What's your favorite Color?</h2>
+            <input type="text" id="answer3" placeholder="Enter your favorite color">
+            <button onclick="nextQuestion(4)">Next</button>
+        </div>
+
+        <div class="card" id="question4">
+            <h2>Question 4: What do you do in your free time?</h2>
+            <input type="text" id="answer4" placeholder="Enter here">
+            <button onclick="nextQuestion(5)">Next</button>
+        </div>
+
+        <div class="card" id="question5">
+            <h2>Question 5: What's your preferable coding language?</h2>
+            <input type="text" id="answer5" placeholder="Enter your preferable coding language">
+            <button onclick="showTitleScreen()">Next</button>
+        </div>
+
+        <div class="card" id="title-screen">
+            <h1>Form Submitted!</h1>
+            <p>Thank you for answering all the questions.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
